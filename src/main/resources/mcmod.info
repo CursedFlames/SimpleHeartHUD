@@ -1,0 +1,18 @@
+[
+{
+  "modid": "simplehearthud",
+  "name": "SimpleHeartHUD",
+  "description": "A simple mod that replaces the health and armor bars",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CursedFlames"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "useDependencyInformation": true,
+  "requiredMods": [],
+  "dependencies": []
+}
+]
