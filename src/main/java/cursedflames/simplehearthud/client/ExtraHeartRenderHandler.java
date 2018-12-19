@@ -160,8 +160,10 @@ public class ExtraHeartRenderHandler {
 
 		// Extra hearts
 		this.mc.getTextureManager().bindTexture(ICON_HEARTS);
-
-		int hp = MathHelper.ceil(player.getHealth()*2);
+		IAttributeInstance attrMaxHealth = player
+				.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH);
+		float healthMax = (float) attrMaxHealth.getAttributeValue();
+		int hp = Math.min(MathHelper.ceil(player.getHealth()*2), (int) Math.ceil(healthMax*2));
 		renderCustomHearts(xBasePos, yBasePos, potionOffset, hp, false);
 	}
 
